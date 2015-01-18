@@ -49,9 +49,9 @@ namespace Drunk_Tristana
 
             // Combo menu
             Config.AddSubMenu(new Menu("Combo", "Combo"));
-            Config.SubMenu("Combo").AddItem(new MenuItem("Use QC", "Use Q").SetValue(true));
-            Config.SubMenu("Combo").AddItem(new MenuItem("Use EC", "Use E").SetValue(true));
-            Config.SubMenu("Combo").AddItem(new MenuItem("Use RC", "Use R").SetValue(true));
+            Config.SubMenu("Combo").AddItem(new MenuItem("UseQC", "Use Q").SetValue(true));
+            Config.SubMenu("Combo").AddItem(new MenuItem("UseEC", "Use E").SetValue(true));
+            Config.SubMenu("Combo").AddItem(new MenuItem("UseRC", "Use R").SetValue(true));
             Config.SubMenu("Combo").AddItem(new MenuItem("UseRCombo", "R if it Hits >=").SetValue(new Slider(2, 1, 5)));
 
             // Harass
@@ -162,10 +162,10 @@ namespace Drunk_Tristana
                 Q.Cast();
             }
 
-            //if (E.IsReady() && Player.Distance(Target) <= E.Range && useE)
-            //{
-           //     E.Cast(Target);
-           // }
+            if (useE && E.IsReady())
+            {
+                E.Cast(Target);
+            }
 
             if (!useR || !R.IsReady()) return;
             if (R.IsKillable(Target))
