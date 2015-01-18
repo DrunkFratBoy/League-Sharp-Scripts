@@ -91,7 +91,7 @@ namespace Drunk_Tristana
         {
             if (Player.IsDead) return;
 
-            KillSteal();
+            //KillSteal();
 
             if (Orbwalker.ActiveMode == Orbwalking.OrbwalkingMode.Combo)
             {
@@ -100,12 +100,24 @@ namespace Drunk_Tristana
 
             if (Orbwalker.ActiveMode == Orbwalking.OrbwalkingMode.Mixed)
             {
-                Harass();
+               // Harass();
             }
 
             // Add auto farm maybe?
 
+
             throw new NotImplementedException();
+        }
+
+        static void Combo()
+        {
+            var Target = TargetSelector.GetTarget(E.Range, TargetSelector.DamageType.Magical);
+            var useQ = Config.Item("UseQC").GetValue<bool>();
+            var useE = Config.Item("UseEC").GetValue<bool>();
+            var useR = Config.Item("UseRC").GetValue<bool>();
+            var hitR = Config.Item("UseRCombo1").GetValue<Slider>().Value;
+
+
         }
     }
 }
