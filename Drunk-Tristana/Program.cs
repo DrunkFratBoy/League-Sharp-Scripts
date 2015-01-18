@@ -157,15 +157,15 @@ namespace Drunk_Tristana
 
             if (Target == null) return;
 
-            if (useQ && Q.IsReady())
+            if (Q.IsReady() && useQ)
             {
                 Q.Cast();
             }
 
-            if (useE && E.IsReady())
-            {
-                E.Cast(Target);
-            }
+            //if (E.IsReady() && Player.Distance(Target) <= E.Range && useE)
+            //{
+           //     E.Cast(Target);
+           // }
 
             if (!useR || !R.IsReady()) return;
             if (R.IsKillable(Target))
