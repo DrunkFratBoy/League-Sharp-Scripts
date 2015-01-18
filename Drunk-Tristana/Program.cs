@@ -153,6 +153,7 @@ namespace Drunk_Tristana
             var useE = Config.Item("UseEC").GetValue<bool>();
             var useR = Config.Item("UseRC").GetValue<bool>();
             var hitR = Config.Item("UseRCombo1").GetValue<Slider>().Value;
+            Game.PrintChat("Combo Active");
 
             if (Target == null) return;
 
