@@ -66,7 +66,7 @@ namespace Drunk_Tristana
             Config.SubMenu("Misc").AddItem(new MenuItem("UseRKs", "Auto R KS").SetValue(true));
             Config.SubMenu("Misc").AddItem(new MenuItem("UseEKs", "Auto E KS").SetValue(true));
             Config.SubMenu("KS").AddItem(new MenuItem("IgKs", "Use Ignite KS").SetValue(true));
-            
+
             // Draw other Menu
             Config.AddSubMenu(new Menu("Draw", "DrawSettings"));
             Config.SubMenu("DrawSettings").AddItem(new MenuItem("Draw E", "E Range").SetValue(false));
@@ -77,7 +77,7 @@ namespace Drunk_Tristana
             Game.OnGameUpdate += Game_OnGameUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
 
-            //Test
+            //Test sdfsf/// dfsafdsafsfsfsa
 
             throw new NotImplementedException(); // End of the function
         }
