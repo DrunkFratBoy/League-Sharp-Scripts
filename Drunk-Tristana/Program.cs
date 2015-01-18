@@ -89,6 +89,22 @@ namespace Drunk_Tristana
 
         static void Game_OnGameUpdate(EventArgs args)
         {
+            if (Player.IsDead) return;
+
+            KillSteal();
+
+            if (Orbwalker.ActiveMode == Orbwalking.OrbwalkingMode.Combo)
+            {
+                Combo();
+            }
+
+            if (Orbwalker.ActiveMode == Orbwalking.OrbwalkingMode.Mixed)
+            {
+                Harass();
+            }
+
+            // Add auto farm maybe?
+
             throw new NotImplementedException();
         }
     }
