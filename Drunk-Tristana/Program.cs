@@ -132,7 +132,7 @@ namespace Drunk_Tristana
 
         static void KillSteal()
         {
-            if (!Config.Item("UseRKS").GetValue<bool>() && !Config.Item("UseEKs").GetValue<bool>()) return;
+            if (!Config.Item("UseRKs").GetValue<bool>() && !Config.Item("UseEKs").GetValue<bool>()) return;
 
             foreach (var target in ObjectManager.Get<Obj_AI_Hero>())
             {
@@ -160,7 +160,7 @@ namespace Drunk_Tristana
             if (Q.IsReady() && useQ)
             {
                 Q.Cast();
-            }
+            }       
 
             if (useE && E.IsReady())
             {
@@ -170,7 +170,7 @@ namespace Drunk_Tristana
             if (!useR || !R.IsReady()) return;
             if (R.IsKillable(Target))
             {
-                R.CastOnUnit(Target);
+                R.CastOnUnit(Target);   
             }
 
         }
