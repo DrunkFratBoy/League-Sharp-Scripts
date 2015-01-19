@@ -136,12 +136,15 @@ namespace Drunk_Tristana
 
             foreach (var target in ObjectManager.Get<Obj_AI_Hero>())
             {
-                if (Config.Item("UseEKs").GetValue<bool> () && !target.IsDead && E.IsReady() && !target.IsAlly && Player.Distance(target.Position) < E.Range && Player.GetSpellDamage(target,SpellSlot.E) > (target.Health + 20)) {
+                if (Config.Item("UseEKs").GetValue<bool>() && !target.IsDead && E.IsReady() && !target.IsAlly && Player.Distance(target.Position) < E.Range && Player.GetSpellDamage(target, SpellSlot.E) > (target.Health + 20))
+                {
                     Game.PrintChat("Attempting to use E KillSteal");
                     E.CastOnUnit(target);
                 }
+                else
+                    Combo();
 
-                // Add R kill steal
+                // Add R kill steal // TEst
             }
         }
 
