@@ -141,8 +141,7 @@ namespace Drunk_Tristana
                     Game.PrintChat("Attempting to use E KillSteal");
                     E.CastOnUnit(target);
                 }
-                else
-                    Combo();
+                Game.PrintChat("Whats happening?");
 
                 // Add R kill steal // TEst
             }
