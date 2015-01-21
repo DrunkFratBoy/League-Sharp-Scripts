@@ -17,7 +17,6 @@ namespace Drunk_Morgana
         private static Menu Config;
         public static Obj_AI_Hero Player { get { return ObjectManager.Player; } }
         private static List<Spell> SpellList = new List<Spell>();
-        private static Math math;
         
         static void Main(string[] args)
         {
@@ -84,7 +83,7 @@ namespace Drunk_Morgana
 
         private static void Combo()
         {
-            var target = TargetSelector.GetTarget(Q.Range.,TargetSelector.DamageType.Magical); // Get the target
+            var target = TargetSelector.GetTarget(Q.Range,TargetSelector.DamageType.Magical); // Get the target
             if (target == null) return;
 
             //Combo
