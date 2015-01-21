@@ -70,7 +70,7 @@ namespace Drunk_Morgana
 
             Config.AddToMainMenu();
             Game.OnGameUpdate += Game_OnGameUpdate;
-
+            Game.PrintChat("Welcome to Drunk-Morgana: Provied by DrunkFratBoy")
         }
 
         static void Game_OnGameUpdate(EventArgs args)
