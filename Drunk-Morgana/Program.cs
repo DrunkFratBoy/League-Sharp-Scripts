@@ -83,6 +83,11 @@ namespace Drunk_Morgana
             }
         }
 
+        static void ProtectAlly()
+        {
+            
+        }
+
         private static void Combo()
         {
             var target = TargetSelector.GetTarget(Q.Range,TargetSelector.DamageType.Magical); // Get the target
@@ -90,8 +95,16 @@ namespace Drunk_Morgana
 
             //Combo
             var prediction = Q.GetPrediction(target);// Create predition based on Q values
-            if (prediction.Hitchance >= HitChance.High && prediction.CollisionObjects.Count(h => h is Obj_AI_Minion) == 0) {
+            if (prediction.Hitchance >= HitChance.High && prediction.CollisionObjects.Count(h => h is Obj_AI_Minion) == 0 ) {
                 Q.Cast(prediction.CastPosition); // Cast Q on the predicted target
+
+                // R Combo - position.CountEnemysInRange(range) - (use CountEnemiesInRange I just obsoleted CountEnemysInRange)      
+            }
+            Game.PrintChat("Before W");
+            if (prediction.Hitchance >= HitChance.High)
+            {
+                Game.PrintChat("Casting W");
+                W.Cast(target);
             }
         }
     }
