@@ -72,7 +72,7 @@ namespace Drunk_Morgana
             Game.OnGameUpdate += Game_OnGameUpdate;
             Game.PrintChat("Welcome to Drunk-Morgana: Provied by DrunkFratBoy");
 
-            throw new NotImplementedException(); // End of the function
+            
         }
 
         static void Game_OnGameUpdate(EventArgs args)
