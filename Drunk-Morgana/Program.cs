@@ -90,7 +90,7 @@ namespace Drunk_Morgana
 
             //Combo
             var prediction = Q.GetPrediction(target);// Create predition based on Q values
-            if (prediction.Hitchance >= HitChance.High && prediction.CollisionObjects.Count(h => h is Obj_AI_Minion) <= 0) {
+            if (prediction.Hitchance >= HitChance.High && prediction.CollisionObjects.Count(h => h is Obj_AI_Minion) < 0) {
                 Q.Cast(prediction.CastPosition); // Cast Q on the predicted target
             }
         }
