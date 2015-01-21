@@ -65,12 +65,14 @@ namespace Drunk_Morgana
             Config.SubMenu("Combo").AddItem(new MenuItem("ActivateCombo", "Combo!").SetValue(new KeyBind(32, KeyBindType.Press)));
 
             // Drwaing Range
-            Config.AddSubMenu(new Menu("Drawings", "Drawings"));
-            Config.SubMenu("Drawings").AddItem(new MenuItem("DrawEnable", "Enable Drawing"));
+            //Config.AddSubMenu(new Menu("Drawings", "Drawings"));
+            //Config.SubMenu("Drawings").AddItem(new MenuItem("DrawEnable", "Enable Drawing"));
 
             Config.AddToMainMenu();
             Game.OnGameUpdate += Game_OnGameUpdate;
             Game.PrintChat("Welcome to Drunk-Morgana: Provied by DrunkFratBoy");
+
+            throw new NotImplementedException(); // End of the function
         }
 
         static void Game_OnGameUpdate(EventArgs args)
