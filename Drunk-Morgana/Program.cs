@@ -45,7 +45,7 @@ namespace Drunk_Morgana
             SpellList.Add(R); // Soul Shackles
 
             // Create the menu
-            Config = new Menu("Drunk-Morgana", "Drunk-Morgana");
+            Config = new Menu("Drunk-Morgana", "Drunk-Morgana", true);
 
             // Initiate Target Selector
             var TargetSelectorMenu = new Menu("Target Selector", "Target Selector");
