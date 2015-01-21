@@ -90,10 +90,8 @@ namespace Drunk_Morgana
 
             //Combo
             var prediction = Q.GetPrediction(target);// Create predition based on Q values
-            Game.PrintChat("Before Combo");
-            if (prediction.Hitchance >= HitChance.Low) {
+            if (prediction.Hitchance >= HitChance.High) {
                 Q.Cast(prediction.CastPosition); // Cast Q on the predicted target
-                Game.PrintChat("During Combo");
             }
         }
     }
