@@ -9,6 +9,15 @@ using SharpDX;
 
 namespace Drunk_Morgana
 {
+ 
+    /*
+     Author: Ron Swanson
+     Date: 2/23/2015
+     Script Name: Drunk Morgana
+     Enjoy (:
+     
+     */
+    
     internal class Program
     {
         private const string Champion = "Morgana";
@@ -64,13 +73,19 @@ namespace Drunk_Morgana
             Config.SubMenu("Combo").AddItem(new MenuItem("UseRCombo", "Use R")).SetValue(true);
             Config.SubMenu("Combo").AddItem(new MenuItem("ActivateCombo", "Combo!").SetValue(new KeyBind(32, KeyBindType.Press)));
 
+            //Config Harrass
+            Config.AddSubMenu(new Menu("Harass", "Harass"));
+            Config.SubMenu("Harass").AddItem(new MenuItem("UseQHarass", "Use Q")).SetValue(true);
+            Config.SubMenu("Harass").AddItem(new MenuItem("UseWHarass", "Use W")).SetValue(true);
+            Config.SubMenu("Harass").AddItem(new MenuItem("ActivateHarass", "Harass!").SetValue(new KeyBind("C".ToCharArray()[0], KeyBindType.Press, false)));
+
             // Drwaing Range
             //Config.AddSubMenu(new Menu("Drawings", "Drawings"));
             //Config.SubMenu("Drawings").AddItem(new MenuItem("DrawEnable", "Enable Drawing"));
 
             Config.AddToMainMenu();
             Game.OnGameUpdate += Game_OnGameUpdate;
-            Game.PrintChat("Welcome to Drunk-Morgana: Provied by DrunkFratBoy");
+            
 
             
         }
@@ -81,11 +96,41 @@ namespace Drunk_Morgana
             {
                 Combo();
             }
+
+            if (Config.Item("ActivateHarass").GetValue<KeyBind>().Active)
+            {
+                Harass();
+            }
         }
 
         static void ProtectAlly()
         {
-            
+            if (Player.IsAlly && Player.MagicDamageTaken >= 100)
+            {
+                E.CastOnUnit(;
+            }
+        }
+
+        private static void Harass()
+        {
+
+            var target = TargetSelector.GetTarget(Q.Range, TargetSelector.DamageType.Magical);
+            if (target == null) return;
+
+            //Harass
+            var prediction = Q.GetPrediction(target); // Create prediction based on Q value
+            if (prediction.Hitchance >= HitChance.High && CollisionableObjects.Minions == 0 || CollisionableObjects.YasuoWall == 0) 
+            {
+                Q.Cast();
+            }
+
+            if (prediction.Hitchance >= HitChance.High)
+            {
+                W.Cast(target);
+            }
+
+
+
         }
 
         private static void Combo()
@@ -110,6 +155,11 @@ namespace Drunk_Morgana
             if (prediction.Hitchance >= HitChance.High)
             {
                 W.Cast(target);
+            }
+
+            if (prediction.AoeTargetsHitCount >= 2)
+            {
+                R.Cast();
             }
            
 
