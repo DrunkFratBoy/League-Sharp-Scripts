@@ -1,0 +1,12 @@
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\bin\Release\Drunk-Tristana.exe.config
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\bin\Release\Drunk-Tristana.exe
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\bin\Release\Drunk-Tristana.pdb
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\bin\Release\LeagueSharp.Common.dll
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\bin\Release\LeagueSharp.dll
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\bin\Release\SharpDX.dll
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\bin\Release\SharpDX.Direct3D9.dll
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\bin\Release\clipper_library.dll
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\bin\Release\LeagueSharp.xml
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\obj\Release\Drunk-Tristana.csprojResolveAssemblyReference.cache
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\obj\Release\Drunk-Tristana.exe
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Tristana\obj\Release\Drunk-Tristana.pdb

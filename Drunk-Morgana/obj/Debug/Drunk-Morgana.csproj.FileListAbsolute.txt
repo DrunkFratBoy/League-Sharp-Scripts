@@ -1,0 +1,12 @@
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\bin\Debug\Drunk-Morgana.exe.config
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\obj\Debug\Drunk-Morgana.csprojResolveAssemblyReference.cache
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\bin\Debug\Drunk-Morgana.exe
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\bin\Debug\Drunk-Morgana.pdb
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\bin\Debug\LeagueSharp.Common.dll
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\bin\Debug\LeagueSharp.dll
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\bin\Debug\SharpDX.dll
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\bin\Debug\SharpDX.Direct3D9.dll
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\bin\Debug\clipper_library.dll
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\bin\Debug\LeagueSharp.xml
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\obj\Debug\Drunk-Morgana.exe
+D:\NightWalker Studio\Drunk-Scripts\L-Sharp-Scripts\Drunk-Morgana\obj\Debug\Drunk-Morgana.pdb
